@@ -74,4 +74,6 @@ int main (int argc, char **argv)
 
     fclose(input_html_file);
     fclose(output_stream);
+
+    return 0;
 }

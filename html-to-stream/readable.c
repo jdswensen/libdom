@@ -29,7 +29,7 @@ void setup_heading ( dom_node_t *node )
         if ( dom_node_is_h(node) == true )
         {
             dom_node_set_readable(node, "=== ", DOM_NODE_READABLE_PREPEND);
-            dom_node_set_readable(node, " ===\n\n", DOM_NODE_READABLE_APPEND);
+            dom_node_set_readable(node, " ===\n", DOM_NODE_READABLE_APPEND);
         }
     }
 }

@@ -82,8 +82,8 @@ set_target_properties(dom
 
 # Add examples
 set(html2stream_src
-html2stream/html2stream.c
-html2stream/readable.c
+html-to-stream/html2stream.c
+html-to-stream/readable.c
 )
 
 add_executable(html2stream ${html2stream_src})
@@ -111,8 +111,8 @@ gen_ctest_with_gtest(
 
 gen_ctest_with_gtest(
     COMPONENT_NAME core
-    TEST_SOURCE tests/test_dom.cpp html2stream/readable.c
+    TEST_SOURCE tests/test_dom.cpp html-to-stream/readable.c
     TEST_LINKS ${LIBRARY_LINKS} dom
-    EXTRA_INCLUDE src html2stream/
+    EXTRA_INCLUDE src html-to-stream/
     TEST_ARGS "-c ../tests/html/astro-year.html"
 )

@@ -1,4 +1,12 @@
 language: c
 compiler: gcc
 
-script: ./tools/build.sh
+before_install:
+  - sudo apt-get install lcov
+
+script:
+  - ./tools/build.sh
+  - ./tools/run-tests.sh -c -d ./build-coverage -l ../tools/lcov-to-cobertura-xml/lcov_cobertura/lcov_cobertura.py
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

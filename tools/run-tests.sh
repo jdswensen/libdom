@@ -55,7 +55,7 @@ run_test() {
 
 		if [ "${cli_coverage}" = "yes" ]; then
 			lcov --rc lcov_branch_coverage=1 --directory . --capture --output-file results/coverage.info
-			lcov --rc lcov_branch_coverage=1 --remove results/coverage.info '*/build/*' '*/tests/*' '/usr/*' '*.hunter/*' --output-file results/coverage.info.clean
+			lcov --rc lcov_branch_coverage=1 --remove results/coverage.info '*/tests/*' '/usr/*' '*.hunter/*' --output-file results/coverage.info.clean
 			genhtml --branch-coverage --highlight --legend -o results/coverage results/coverage.info.clean
 
 			if [ "${cli_lcov_cobertura}" ]; then

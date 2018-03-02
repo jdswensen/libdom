@@ -1,3 +1,14 @@
+<a name="v0.1.1"></a>
+### v0.1.1 (2018-03-02)
+
+
+#### Bug Fixes
+
+* **Makefile:**  change include directory ([168ee6d8](168ee6d8))
+* **readable:**  remove extra newline ([9c093198](9c093198))
+
+
+
 <a name="0.1.0"></a>
 ## 0.1.0 (2018-03-02)
 

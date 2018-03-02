@@ -1,0 +1,6 @@
+[submodule "cmake-modules"]
+	path = cmake-modules
+	url = https://github.com/jdswensen/cmake-modules.git
+[submodule "tools/lcov-to-cobertura-xml"]
+	path = tools/lcov-to-cobertura-xml
+	url = https://github.com/eriwen/lcov-to-cobertura-xml.git

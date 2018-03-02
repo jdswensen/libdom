@@ -1,4 +1,4 @@
-CFLAGS += -O0 -g -Wall -std=gnu99 -Iinclude/ -Isrc/ -Ihtml2stream/
+CFLAGS += -O0 -g -Wall -std=gnu99 -Iinclude/ -Isrc/ -Ihtml-to-stream/
 AR ?= ar
 DEPS +=
 

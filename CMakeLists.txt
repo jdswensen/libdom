@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
 # Package hunter
 include("cmake-modules/HunterGate.cmake")
 HunterGate(
-    URL "https://github.com/ruslo/hunter/archive/v0.20.11.tar.gz"
-    SHA1 "4959eb9f4d01b5d6a7242b2b6ad7baa059c174ae"
+    URL "https://github.com/cpp-pm/hunter/archive/v0.23.297.tar.gz"
+    SHA1 "3319fe6a3b08090df7df98dee75134d68e2ef5a3"
 )
 
 project(dom)

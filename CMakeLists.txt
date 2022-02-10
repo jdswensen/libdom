@@ -48,9 +48,6 @@ if(LIBBSD)
     list(APPEND LIBRARY_LINKS bsd)
 endif()
 
-hunter_add_package(GTest)
-find_package(GTest CONFIG REQUIRED)
-
 # Define source files for library
 set(DOM_SRC src/dom.c)
 set(PARSE_SRC src/parse.c)
